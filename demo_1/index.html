@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>Untitled Page</title>
+    <style type="text/css">
+        .style2
+        {
+            width: 504px;
+            height: 36%;
+            text-align: center;
+        }
+        .style3
+        {
+            width: 504px;
+            height: 36%;
+        }
+    </style>
+    <script type="text/javascript" language='javascript'>
+
+
+function show()
+{
+document.getElementById('imgmain').src="Image/cricket1.png";
+document.getElementById('img2').src="Image/Circle.png";
+document.getElementById('img3').src="Image/Circle.png";
+document.getElementById('img4').src="Image/Circle.png";
+document.getElementById('img5').src="Image/Circle.png";
+
+
+document.getElementById('img1').src="Image/CircleFill.png";
+setTimeout("show1()",2000);
+}
+function show1()
+{
+document.getElementById('imgmain').src="Image/cricket2.png";
+document.getElementById('img1').src="Image/Circle.png";
+document.getElementById('img3').src="Image/Circle.png";
+document.getElementById('img4').src="Image/Circle.png";
+document.getElementById('img5').src="Image/Circle.png";
+document.getElementById('img2').src="Image/CircleFill.png";
+setTimeout("show2()",2000);
+}
+function show2()
+{
+document.getElementById('imgmain').src="Image/football1.png";
+document.getElementById('img3').src="Image/CircleFill.png";
+document.getElementById('img1').src="Image/Circle.png";
+document.getElementById('img2').src="Image/Circle.png";
+document.getElementById('img4').src="Image/Circle.png";
+document.getElementById('img5').src="Image/Circle.png";
+setTimeout("show3()",2000);
+}
+function show3()
+{
+document.getElementById('imgmain').src="Image/formula11.png";
+document.getElementById('img4').src="Image/CircleFill.png";
+document.getElementById('img1').src="Image/Circle.png";
+document.getElementById('img2').src="Image/Circle.png";
+document.getElementById('img3').src="Image/Circle.png";
+document.getElementById('img5').src="Image/Circle.png";
+setTimeout("show4()",2000);
+}
+function show4()
+{
+document.getElementById('imgmain').src="Image/formula12.png";
+document.getElementById('img5').src="Image/CircleFill.png";
+document.getElementById('img1').src="Image/Circle.png";
+document.getElementById('img2').src="Image/Circle.png";
+document.getElementById('img3').src="Image/Circle.png";
+document.getElementById('img4').src="Image/Circle.png";
+
+setTimeout("show()",2000);
+}
+
+</script>
+</head>
+
+
+
+
+
+<body onLoad="show()">
+   
+    <table style="height: 270px">
+   
+    <tr>
+    <td class="style3">
+    <img id="imgmain" style="border: medium solid #000000; height: 270px; width: 589px" 
+           />
+    </td>
+    </tr>
+    
+    <tr>
+    <td class="style2">
+    <img id="img1" src="Image/Circle.png"  style="height: 17px; width: 21px" /><img 
+         id="img2" src="Image/Circle.png" style="height: 17px; width: 21px" /><img 
+            id="img3" src="Image/Circle.png" style="height: 17px; width: 21px" /><img 
+            id="img4" src="Image/Circle.png" style="height: 17px; width: 21px" /><img 
+            id="img5" src="Image/Circle.png" style="height: 17px; width: 21px" />
+    </td>
+    </tr>
+    </table>
+
+    
+    
+</body>
+</html>
+

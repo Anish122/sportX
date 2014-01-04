@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+/*body {background-color: #000000;margin-left: 0px;margin-top: 10px;margin-right: 0px;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;}*/
+.style7 {font-size: 10px; }
+body,td,th {/*color: #999999;*/}
+.style11 {color: #CC3300}
+a:link {text-decoration: none; color: #8a5c26;outline:none;}
+a:visited {text-decoration: none; color: #8a5c26;outline:none;}
+a:hover {text-decoration: none; color: #414042;outline:none;}
+.pages {font-size:10px;font-family:Verdana, Arial, Helvetica, sans-serif}
+.copy {font-size:8px;font-family:Verdana, Arial, Helvetica, sans-serif;color:#333333;text-align:center;}
+.copy a {font-size:8px;font-family:Verdana, Arial, Helvetica, sans-serif;color:#333333;text-align:center;}
+

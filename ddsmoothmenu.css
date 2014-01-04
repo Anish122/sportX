@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* CSS Document */
+.ddsmoothmenu{
+font: bold 12px Verdana;
+background: #636467; /*background of menu bar (default state)*/
+width: 100%;
+}
+
+.ddsmoothmenu ul{
+z-index:100;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{
+display: block;
+nbackground: #414141; /*background of menu items (default state)*/
+ncolor: white;
+text-decoration: none;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: white;
+}
+
+.ddsmoothmenu ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+/*background: black; 
+color: white;*/
+}
+
+.ddsmoothmenu ul li a:hover{
+ /*background: black;background of menu items during onmouseover (hover state)
+color: white;*/
+}
+	
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{
+position: absolute;
+left: 0;
+margin-left:4px;
+display: none; /*collapse all sub menus to begin with*/
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+font: normal 13px Verdana;
+width: 160px; /*width of sub menus*/
+padding: 5px;
+margin: 0;
+border-top-width: 0;
+border-bottom: 1px solid gray;
+background: #636467; /*background of menu items (default state)*/
+color: white;
+}
+
+.ddsmoothmenu ul li ul li a:hover{
+background: black; /*background of menu items during onmouseover (hover state)*/
+color: white;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{ /*shadow for NON CSS3 capable browsers*/
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: silver;
+}
+
+.toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+opacity: 0.8;
+}
+
+.ddsmoothmenu ul li a.topnav, .ddsmoothmenu ul li a.topnav:visited{
+	padding-top:33px;
+	height:0;
+	background-image: url(../images/topnavigation.png);
+	overflow:hidden;
+}
+
+.ddsmoothmenu ul li a.topnav-home:link, .ddsmoothmenu ul li a.topnav-home:visited {
+	width: 35px;
+	background-position: 0 0;
+}
+
+.ddsmoothmenu ul li a.topnav-home:hover , .ddsmoothmenu ul li a.topnav-home.selected{
+	background-position: 0 -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-tensports:link, .ddsmoothmenu ul li a.topnav-tensports:visited {
+	width: 95px;
+	background-position: -35px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-tensports:hover, .ddsmoothmenu ul li a.topnav-tensports.selected {
+	background-position: -35px -33px;
+}
+
+
+.ddsmoothmenu ul li a.topnav-schedule:link, .ddsmoothmenu ul li a.topnav-schedule:visited {
+	width: 87px;
+	background-position: -130px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-schedule:hover , .ddsmoothmenu ul li a.topnav-schedule.selected{
+	background-position: -130px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-news:link, .ddsmoothmenu ul li a.topnav-news:visited {
+	width: 58px;
+	background-position: -217px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-news:hover, .ddsmoothmenu ul li a.topnav-news.selected {
+	background-position: -217px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-videos:link, .ddsmoothmenu ul li a.topnav-videos:visited {
+	width: 66px;
+	background-position: -275px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-videos:hover , .ddsmoothmenu ul li a.topnav-videos.selected {
+	background-position: -275px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-media:link, .ddsmoothmenu ul li a.topnav-media:visited {
+	width: 61px;
+	background-position: -341px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-media:hover , .ddsmoothmenu ul li a.topnav-media.selected{
+	background-position: -341px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-aboutus:link, .ddsmoothmenu ul li a.topnav-aboutus:visited {
+	width: 81px;
+	background-position: -402px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-aboutus:hover , .ddsmoothmenu ul li a.topnav-aboutus.selected {
+	background-position: -402px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-contest:link, .ddsmoothmenu ul li a.topnav-contest:visited {
+    background-position: -483px 0;
+    width: 82px;
+}
+.ddsmoothmenu ul li a.topnav-contest:hover, .ddsmoothmenu ul li a.topnav-contest.selected {
+    background-position: -483px -33px;
+}
+
+.ddsmoothmenu ul li a.topnav-articles:link, .ddsmoothmenu ul li a.topnav-articles:visited {
+	width: 82px;
+	background-position: -565px 0;
+}
+
+.ddsmoothmenu ul li a.topnav-articles:hover , .ddsmoothmenu ul li a.topnav-articles.selected {
+	background-position: -565px -33px;
+}
+
